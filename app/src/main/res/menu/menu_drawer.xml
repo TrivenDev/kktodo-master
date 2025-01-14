@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<!--侧边栏-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/other"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_repeat_manage"
+            android:checkable="false"
+            android:icon="@drawable/each_day_todo_icon"
+            android:title="@string/menu_each_day_todo_manage" />
+
+        <item
+            android:id="@+id/nav_category_manage"
+            android:checkable="false"
+            android:icon="@drawable/todo_sort_icon"
+            android:title="@string/menu_todo_sort_manage" />
+
+        <item
+            android:id="@+id/nav_recycle_bin"
+            android:checkable="false"
+            android:icon="@drawable/recycle_bin_icon"
+            android:title="@string/menu_recover_bin" />
+    </group>
+
+    <group
+        android:id="@+id/setting"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_setting"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/menu_about" />
+    </group>
+
+
+</menu>
+
+
+
+
+
+    <!--    <group-->
+    <!--        android:id="@+id/main_tab"-->
+    <!--        android:checkableBehavior="single">-->
+
+    <!--        <item-->
+    <!--            android:id="@+id/nav_todo"-->
+    <!--            android:icon="@drawable/todo_icon"-->
+    <!--            android:checked="true"-->
+    <!--            android:title="@string/menu_todo" />-->
+
+    <!--        <item-->
+    <!--            android:id="@+id/nav_summary"-->
+    <!--            android:icon="@drawable/icon_menu_trending"-->
+    <!--            android:title="@string/menu_summary" />-->
+
+    <!--        <item-->
+    <!--            android:id="@+id/nav_statistic"-->
+    <!--            android:icon="@drawable/icon_statistic"-->
+    <!--            android:title="@string/menu_statistic" />-->
+    <!--    </group>-->

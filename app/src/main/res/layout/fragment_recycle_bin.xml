@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.xuexiang.xui.widget.layout.XUILinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/xui_config_color_background"
+    android:orientation="vertical"
+    android:gravity="top">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        style="@style/PullDownStyle">
+
+        <androidx.core.widget.NestedScrollView style="@style/ScrollViewStyle">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:height="30dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="30dp"
+                    tools:listitem="@layout/mini_recycle_bin"
+                    />
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.xuexiang.xui.widget.layout.XUILinearLayout>

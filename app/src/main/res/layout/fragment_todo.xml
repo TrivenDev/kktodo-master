@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/xui_config_color_background"
+    android:orientation="vertical"
+    android:gravity="top">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        style="@style/PullDownStyle"
+        android:id="@+id/refreshLayout">
+
+        <androidx.core.widget.NestedScrollView style="@style/ScrollViewStyle">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:height="30dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/todo_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="30dp"
+                        tools:listitem="@layout/mini_todo"
+                        />
+
+                </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/todo_add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginStart="?attr/xui_config_content_spacing_horizontal"
+            android:layout_marginTop="?attr/xui_config_content_spacing_horizontal"
+            android:layout_marginEnd="?attr/xui_config_content_spacing_horizontal"
+            app:elevation="8dp"
+            app:srcCompat="@drawable/todo_add_icon"
+            android:layout_weight="20"
+            android:layout_marginBottom="40dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

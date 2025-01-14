@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuexiang.xui.widget.layout.XUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.layout.XUILinearLayout
+        style="@style/XUILayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        app:sStrokeColor="@color/colorPrimary"
+        app:sStrokeWidth="0.1dp"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+            android:id="@+id/repeat_category"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            app:sCornersBottomLeftRadius="8dp"
+            app:sCornersTopLeftRadius="8dp"
+            app:sSolidColor="@color/colorPrimary"/>
+
+        <com.xuexiang.xui.widget.layout.XUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp">
+            <com.xuexiang.xui.widget.layout.XUILinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                android:gravity="center|left">
+
+
+                <com.xuexiang.xui.widget.layout.XUILinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_gravity="top"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/repeat_category_name"
+                        android:background="@null"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:text="生活"
+                        android:textSize="15dip" />
+
+                    <TextView
+                        android:id="@+id/repeat_things"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxEms="7"
+                        android:ellipsize="end"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:background="@null"
+                        android:text="洗衣服、打扫卫生"
+                        android:textSize="20dip" />
+
+                </com.xuexiang.xui.widget.layout.XUILinearLayout>
+
+                <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                    android:id="@+id/repeat_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/todo_edit_icon"
+                    android:backgroundTint="@color/colorPrimary">
+                </com.xuexiang.xui.widget.button.shadowbutton.ShadowButton>
+                <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                    android:id="@+id/repeat_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/todo_delete_icon"
+                    android:backgroundTint="@color/colorPrimary">
+
+                </com.xuexiang.xui.widget.button.shadowbutton.ShadowButton>
+            </com.xuexiang.xui.widget.layout.XUILinearLayout>
+            <ProgressBar
+                android:id="@+id/repeat_percent"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:progress="30" />
+        </com.xuexiang.xui.widget.layout.XUILinearLayout>
+    </com.xuexiang.xui.widget.layout.XUILinearLayout>
+</com.xuexiang.xui.widget.layout.XUILinearLayout>
